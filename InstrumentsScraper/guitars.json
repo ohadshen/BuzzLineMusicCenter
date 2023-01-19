@@ -1,0 +1,1004 @@
+{
+    "companies": [
+        "Guild",
+        "Ibanez",
+        "Dean Guitars",
+        "Baton Rouge",
+        "Heritage Guitar",
+        "Fender",
+        "Godin",
+        "Luna Guitars",
+        "Marcus Miller",
+        "Harley Benton",
+        "LAVA MUSIC",
+        "Takamine",
+        "Duesenberg",
+        "Stanford",
+        "The Loar",
+        "Taylor",
+        "Epiphone",
+        "Squier",
+        "Gretsch",
+        "Lakewood",
+        "DAngelico",
+        "Ovation"
+    ],
+    "electric": [
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-75MN NA Vintage Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/224321.webp",
+            "price": "515\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-20 SB Standard Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/140442.webp",
+            "price": "333\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-75MN Black Vintage Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/355902.webp",
+            "price": "515\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-62CC SP",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/523524.webp",
+            "price": "544\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-62CC SFG",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/523526.webp",
+            "price": "544\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-75 SB Vintage Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/304930.webp",
+            "price": "515\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-62CC BK",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/523539.webp",
+            "price": "544\u20aa"
+        },
+        {
+            "company": "Marcus Miller",
+            "name": "Marcus Miller V7 Swamp Ash-4 NT 2nd Gen",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/446264.webp",
+            "price": "1.829\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-62CC LPB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/523522.webp",
+            "price": "544\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Bass Guitar Kit J-Style",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/280893.webp",
+            "price": "300\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-62CC DR",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/523528.webp",
+            "price": "544\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-62 SB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/523546.webp",
+            "price": "544\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton HBZ-2004 Deluxe Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/264956.webp",
+            "price": "911\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-62CC OW",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/523536.webp",
+            "price": "544\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-75MN SB Vintage Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/351690.webp",
+            "price": "515\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton MV-4JB Gotoh SB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/530915.webp",
+            "price": "699\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton MV-4JB Gotoh BK",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/530913.webp",
+            "price": "699\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-75MN SB Vintage Seri Bundle",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/351697.webp",
+            "price": "822\u20aa"
+        },
+        {
+            "company": "Marcus Miller",
+            "name": "Marcus Miller V3 TS 2nd Gen",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/446377.webp",
+            "price": "1.359\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-75MN Black V. Series Bundle",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/540192.webp",
+            "price": "567\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-75 SB Vintage Series Set 1",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/315433.webp",
+            "price": "822\u20aa"
+        },
+        {
+            "company": "Marcus Miller",
+            "name": "Marcus Miller V7 Swamp Ash-4 SG 2nd Gen",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/460033.webp",
+            "price": "1.829\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton JB-20 BM Standard Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/460178.webp",
+            "price": "364\u20aa"
+        },
+        {
+            "company": "Marcus Miller",
+            "name": "Marcus Miller V3 AWH 2nd Gen",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/446374.webp",
+            "price": "1.111\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton MV-4JB Gotoh DB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/530998.webp",
+            "price": "699\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-52 NA Vintage Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/223985.webp",
+            "price": "485\u20aa"
+        },
+        {
+            "company": "Squier",
+            "name": "Squier 40th Anniv. Tele BLK",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/536002.webp",
+            "price": "1.065\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Electric Guitar Kit T-Style",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/115991.webp",
+            "price": "272\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-40 TBK Deluxe Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/177010.webp",
+            "price": "422\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-80 NT Deluxe Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/310672.webp",
+            "price": "544\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Fusion-T HH HT EB PSP",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/501688.webp",
+            "price": "999\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-90FLT Orange Blast",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/490004.webp",
+            "price": "544\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-62CC SFG",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/502847.webp",
+            "price": "456\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-20MN CA Standard Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/461102.webp",
+            "price": "272\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-62CC SP",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/502828.webp",
+            "price": "456\u20aa"
+        },
+        {
+            "company": "Squier",
+            "name": "Squier 40th Anniv. Tele SGM",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/536044.webp",
+            "price": "1.065\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-20 BK Standard Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/153579.webp",
+            "price": "272\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-20 SB Standard Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/220964.webp",
+            "price": "272\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-62CC CF",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/502846.webp",
+            "price": "456\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Fusion-T EMG HT Roasted SBK",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/503289.webp",
+            "price": "1.369\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-62CC IS",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/502830.webp",
+            "price": "456\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-70 Black Paisley",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/374859.webp",
+            "price": "515\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-69TL Hot Rod NT Roasted",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/517406.webp",
+            "price": "666\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Fusion-T HH Roasted DB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/501677.webp",
+            "price": "911\u20aa"
+        },
+        {
+            "company": "Fender",
+            "name": "Fender AM Pro II Tele MN BTB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/500767.webp",
+            "price": "5.899\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Fusion-T HH EB OCT",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/469560.webp",
+            "price": "911\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-90QM HH Trans Blue",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/349577.webp",
+            "price": "699\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton TE-53KR BL Tribute Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/517345.webp",
+            "price": "729\u20aa"
+        },
+        {
+            "company": "Squier",
+            "name": "Squier Contemp Tele RMN OLV",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/547536.webp",
+            "price": "1.219\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Fusion-T HH Roasted SSP",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/501679.webp",
+            "price": "1.219\u20aa"
+        }
+    ],
+    "acoustic": [
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Baritone CLG-414BCE NT",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/436640.webp",
+            "price": "975\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Baritone CLG-414BCE NT Bundle",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/537229.webp",
+            "price": "1.035\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Baritone CLG-414BCE NT Bundle",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/537228.webp",
+            "price": "1.019\u20aa"
+        },
+        {
+            "company": "Guild",
+            "name": "Guild BT-258E Deluxe Baritone",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/511890.webp",
+            "price": "1.925\u20aa"
+        },
+        {
+            "company": "Baton Rouge",
+            "name": "Baton Rouge X11S/BTE",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/496377.webp",
+            "price": "1.219\u20aa"
+        },
+        {
+            "company": "Guild",
+            "name": "Guild BT-240E Baritone",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/511887.webp",
+            "price": "1.649\u20aa"
+        },
+        {
+            "company": "Ibanez",
+            "name": "Ibanez ACFS380BT-OPS",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/516665.webp",
+            "price": "2.444\u20aa"
+        },
+        {
+            "company": "Ibanez",
+            "name": "Ibanez AE275BT-LGS",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/481761.webp",
+            "price": "1.829\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Baritone CLG-414BCE NT B-Stock",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/436640.webp",
+            "price": "811\u20aa"
+        },
+        {
+            "company": "Lakewood",
+            "name": "Lakewood M-34 CP Baritone",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/536281.webp",
+            "price": "7.799\u20aa"
+        },
+        {
+            "company": "Lakewood",
+            "name": "Lakewood M-31 CP Baritone",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/536280.webp",
+            "price": "7.599\u20aa"
+        },
+        {
+            "company": "Baton Rouge",
+            "name": "Baton Rouge X11S/BTE B-Stock",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/496377.webp",
+            "price": "1.025\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton GS-Travel Mahogany",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/382553.webp",
+            "price": "333\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton GS-Travel-E Mahogany",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/410797.webp",
+            "price": "422\u20aa"
+        },
+        {
+            "company": "Luna Guitars",
+            "name": "Luna Guitars Henna Paradise Spruce",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/107905.webp",
+            "price": "699\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton CLP-12SM BK Solid Top",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/521852.webp",
+            "price": "678\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton CLF-100E",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/502756.webp",
+            "price": "515\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Delta Blues MJCE",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/451678.webp",
+            "price": "364\u20aa"
+        },
+        {
+            "company": "LAVA MUSIC",
+            "name": "LAVA MUSIC ME PRO Gold",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/501624.webp",
+            "price": "3.666\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton DS-10 Mini",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/321012.webp",
+            "price": "211\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton CLP-15ME SolidWood",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/505974.webp",
+            "price": "911\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Delta Blues MJCE Bundle",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/537051.webp",
+            "price": "411\u20aa"
+        },
+        {
+            "company": "Gretsch",
+            "name": "Gretsch G9500 Jim Dandy Flat Top",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/304146.webp",
+            "price": "577\u20aa"
+        },
+        {
+            "company": "LAVA MUSIC",
+            "name": "LAVA MUSIC ME 3 36\" w. Space Bag SPGR",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/534858.webp",
+            "price": "3.975\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Custom Line CLA-28VE WN",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/414102.webp",
+            "price": "1.065\u20aa"
+        },
+        {
+            "company": "LAVA MUSIC",
+            "name": "LAVA MUSIC ME 2 Freeboost BK",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/493655.webp",
+            "price": "1.829\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton GS-Travel-E Spruce",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/410803.webp",
+            "price": "422\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton GS-Travel Spruce",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/382556.webp",
+            "price": "333\u20aa"
+        },
+        {
+            "company": "LAVA MUSIC",
+            "name": "LAVA MUSIC ME 3 38\" w. Space Bag SPGR",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/534840.webp",
+            "price": "4.279\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton CG-45E Vintage Sunburst",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/490947.webp",
+            "price": "241\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton CG-45 NS",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/142800.webp",
+            "price": "211\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Delta Blues DCE",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/451675.webp",
+            "price": "333\u20aa"
+        },
+        {
+            "company": "Taylor",
+            "name": "Taylor GTe Urban Ash/Spruce",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/502515.webp",
+            "price": "3.399\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Delta Blues T",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/451682.webp",
+            "price": "272\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton CLP-15E Koa Exotic",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/501220.webp",
+            "price": "849\u20aa"
+        },
+        {
+            "company": "Takamine",
+            "name": "Takamine GN51CE-NAT",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/444422.webp",
+            "price": "1.525\u20aa"
+        },
+        {
+            "company": "LAVA MUSIC",
+            "name": "LAVA MUSIC Blue Lava Touch w. Airflow MB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/535094.webp",
+            "price": "2.555\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton D-200CE-12BK",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/165307.webp",
+            "price": "333\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton D-200CE-12NT",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/165306.webp",
+            "price": "333\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Custom Line CLJ-412E NT",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/308208.webp",
+            "price": "822\u20aa"
+        },
+        {
+            "company": "Takamine",
+            "name": "Takamine GJ72CE-12-Nat",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/442126.webp",
+            "price": "1.985\u20aa"
+        },
+        {
+            "company": "DAngelico",
+            "name": "DAngelico Premier Fulton LS Aged Mah",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/513975.webp",
+            "price": "911\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Custom Line CLJ-412E 3SB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/465261.webp",
+            "price": "879\u20aa"
+        },
+        {
+            "company": "Fender",
+            "name": "Fender Villager 12-String V3",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/443624.webp",
+            "price": "1.333\u20aa"
+        },
+        {
+            "company": "Ovation",
+            "name": "Ovation Pro Series 2751AX-5-G Std.Ball",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/519242.webp",
+            "price": "3.055\u20aa"
+        },
+        {
+            "company": "Guild",
+            "name": "Guild F-2512E Maple Westerly Archbac",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/378816.webp",
+            "price": "1.525\u20aa"
+        },
+        {
+            "company": "Fender",
+            "name": "Fender CD-60SCE-12 Nat WN",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/452172.webp",
+            "price": "899\u20aa"
+        },
+        {
+            "company": "Baton Rouge",
+            "name": "Baton Rouge X11LS/F-AB-12 Folk",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/511402.webp",
+            "price": "655\u20aa"
+        },
+        {
+            "company": "Taylor",
+            "name": "Taylor 150e Walnut",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/404474.webp",
+            "price": "3.055\u20aa"
+        },
+        {
+            "company": "DAngelico",
+            "name": "DAngelico Premier Fulton LS",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/484952.webp",
+            "price": "911\u20aa"
+        },
+        {
+            "company": "Taylor",
+            "name": "Taylor 362CE 12 Fret 12 string",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/485381.webp",
+            "price": "7.599\u20aa"
+        },
+        {
+            "company": "Guild",
+            "name": "Guild D-2612CE Deluxe ATB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/469033.webp",
+            "price": "1.925\u20aa"
+        },
+        {
+            "company": "Fender",
+            "name": "Fender CD-140SCE-12 WA Nat",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/463175.webp",
+            "price": "1.159\u20aa"
+        },
+        {
+            "company": "Takamine",
+            "name": "Takamine GJ72CE-12BSB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/444413.webp",
+            "price": "1.985\u20aa"
+        },
+        {
+            "company": "Ovation",
+            "name": "Ovation Celebrity Elite CE4412-5-G",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/418526.webp",
+            "price": "1.666\u20aa"
+        },
+        {
+            "company": "Ovation",
+            "name": "Ovation Pro Series Elite 2058-TX-5-G",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/520757.webp",
+            "price": "2.659\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Custom Line CLD-10SCE-12BKS",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/314897.webp",
+            "price": "822\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton D-200CE-12BK Bundle",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/538115.webp",
+            "price": "379\u20aa"
+        },
+        {
+            "company": "Guild",
+            "name": "Guild F-2512CE Deluxe Antique Burst",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/519447.webp",
+            "price": "2.045\u20aa"
+        },
+        {
+            "company": "Guild",
+            "name": "Guild F512 ATB w/LR Baggs USA",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/444314.webp",
+            "price": "13.155\u20aa"
+        },
+        {
+            "company": "Epiphone",
+            "name": "Epiphone Hummingbird 12",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/501125.webp",
+            "price": "2.444\u20aa"
+        },
+        {
+            "company": "Taylor",
+            "name": "Taylor 254ce",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/483305.webp",
+            "price": "3.666\u20aa"
+        }
+    ],
+    "bass": [
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton BigTone Trem Vintage Orange",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/349018.webp",
+            "price": "999\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Custom Line Manhattan-Standard",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/306822.webp",
+            "price": "822\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton BigTone Trem White",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/349014.webp",
+            "price": "999\u20aa"
+        },
+        {
+            "company": "Guild",
+            "name": "Guild X-175 Manhattan Special",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/483697.webp",
+            "price": "3.975\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton BigTone Trem White Bundle",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/537081.webp",
+            "price": "1.279\u20aa"
+        },
+        {
+            "company": "DAngelico",
+            "name": "DAngelico Premier EXL1 Satin Walnut",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/544818.webp",
+            "price": "2.595\u20aa"
+        },
+        {
+            "company": "Godin",
+            "name": "Godin 5th Ave CW Kingpin II HB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/471245.webp",
+            "price": "3.199\u20aa"
+        },
+        {
+            "company": "Duesenberg",
+            "name": "Duesenberg Alliance Series Tom Bukovac",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/513704.webp",
+            "price": "8.555\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton BigTone Vintage Orange w/Case",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/404972.webp",
+            "price": "1.279\u20aa"
+        },
+        {
+            "company": "Heritage Guitar",
+            "name": "Heritage Guitar Eagle Classic OSB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/460182.webp",
+            "price": "19.222\u20aa"
+        },
+        {
+            "company": "Guild",
+            "name": "Guild A-150 Savoy Blonde",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/305072.webp",
+            "price": "4.111\u20aa"
+        },
+        {
+            "company": "The Loar",
+            "name": "The Loar LH-600 VSB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/234559.webp",
+            "price": "3.055\u20aa"
+        },
+        {
+            "company": "Godin",
+            "name": "Godin 5th Avenue Kingpin Cognacburst",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/209636.webp",
+            "price": "2.899\u20aa"
+        },
+        {
+            "company": "Godin",
+            "name": "Godin 5th Ave CW Kingpin II Cognag B",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/471165.webp",
+            "price": "3.359\u20aa"
+        },
+        {
+            "company": "Stanford",
+            "name": "Stanford CR Fatboy 75",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/420762.webp",
+            "price": "3.199\u20aa"
+        },
+        {
+            "company": "Godin",
+            "name": "Godin 5th Ave Kingpin P90 LH",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/471254.webp",
+            "price": "3.199\u20aa"
+        },
+        {
+            "company": "Ibanez",
+            "name": "Ibanez PM200-NT Pat Metheny",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/327125.webp",
+            "price": "9.111\u20aa"
+        },
+        {
+            "company": "Guild",
+            "name": "Guild X-175B Manhattan w/Bigsby",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/305071.webp",
+            "price": "3.849\u20aa"
+        },
+        {
+            "company": "The Loar",
+            "name": "The Loar LH-309-VS",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/269707.webp",
+            "price": "2.139\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Custom Line Manhattan-S Bundle",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/543751.webp",
+            "price": "1.139\u20aa"
+        },
+        {
+            "company": "Ibanez",
+            "name": "Ibanez GB10SE-BS George Benson",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/379249.webp",
+            "price": "4.399\u20aa"
+        },
+        {
+            "company": "Duesenberg",
+            "name": "Duesenberg Fullerton Carl Carlton WH",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/235142.webp",
+            "price": "7.949\u20aa"
+        },
+        {
+            "company": "Godin",
+            "name": "Godin 5th Avenue Night Club Ind. BL",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/471142.webp",
+            "price": "4.567\u20aa"
+        },
+        {
+            "company": "Gretsch",
+            "name": "Gretsch G100CE BK",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/215307.webp",
+            "price": "2.749\u20aa"
+        },
+        {
+            "company": "DAngelico",
+            "name": "DAngelico Premier EXL1 Satin Honey Blond",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/544816.webp",
+            "price": "3.055\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton PB-20 SBK Standard Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/449512.webp",
+            "price": "394\u20aa"
+        },
+        {
+            "company": "Squier",
+            "name": "Squier 40th P Bass Black",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/535975.webp",
+            "price": "1.065\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton PJ-4 SBK Deluxe Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/518502.webp",
+            "price": "394\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton MV-4PJ Gotoh BK",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/531028.webp",
+            "price": "699\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton MV-4PJ Gotoh SB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/531002.webp",
+            "price": "699\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton MV-4PJ Gotoh DB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/531029.webp",
+            "price": "699\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton MV-4PJ Gotoh SP",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/531003.webp",
+            "price": "699\u20aa"
+        },
+        {
+            "company": "Dean Guitars",
+            "name": "Dean Guitars Custom Zone Bass FP",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/221056.webp",
+            "price": "759\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton MV-4PJ Gotoh SFG",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/531005.webp",
+            "price": "699\u20aa"
+        },
+        {
+            "company": "Squier",
+            "name": "Squier 40th Anni. P-Bass VB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/536198.webp",
+            "price": "1.495\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton PJ-4 HTR Deluxe Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/139024.webp",
+            "price": "364\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton PJ-74 VW Vintage Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/409652.webp",
+            "price": "544\u20aa"
+        },
+        {
+            "company": "Squier",
+            "name": "Squier 40th Anni. P-Bass DR",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/536193.webp",
+            "price": "1.465\u20aa"
+        },
+        {
+            "company": "Squier",
+            "name": "Squier CV 60s P-Bass LRL OWT",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/457306.webp",
+            "price": "1.279\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton PB-20 BK Standard Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/163851.webp",
+            "price": "333\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Bass Guitar Kit P-Style",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/194896.webp",
+            "price": "300\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton Enhanced MP-4MN Natural",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/443474.webp",
+            "price": "975\u20aa"
+        },
+        {
+            "company": "Squier",
+            "name": "Squier Affinity P Bass MN PJ OW",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/516728.webp",
+            "price": "789\u20aa"
+        },
+        {
+            "company": "Squier",
+            "name": "Squier CV 70s P Bass MN WN",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/468527.webp",
+            "price": "1.279\u20aa"
+        },
+        {
+            "company": "Fender",
+            "name": "Fender Player Plus P-Bass PF 3CSB",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/525040.webp",
+            "price": "3.333\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton PB-50 FR Vintage Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/422768.webp",
+            "price": "364\u20aa"
+        },
+        {
+            "company": "Fender",
+            "name": "Fender Player Series P-Bass MN TPL",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/439268.webp",
+            "price": "2.595\u20aa"
+        },
+        {
+            "company": "Marcus Miller",
+            "name": "Marcus Miller P7 Alder 4 Black 2nd Gen",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/446138.webp",
+            "price": "1.819\u20aa"
+        },
+        {
+            "company": "Marcus Miller",
+            "name": "Marcus Miller P7 Alder 4 AW 2nd Gen",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/446135.webp",
+            "price": "1.819\u20aa"
+        },
+        {
+            "company": "Harley Benton",
+            "name": "Harley Benton PB-50 SB Vintage Series",
+            "img": "https://thumbs.static-thomann.de/thumb//thumb220x220/pics/prod/307763.webp",
+            "price": "364\u20aa"
+        }
+    ]
+}
