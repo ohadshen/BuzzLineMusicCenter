@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { useMutation } from "@tanstack/react-query";
+import React, { useState } from "react";
 import "./register.css";
-import { Button } from "react-bootstrap";
-import http from "../../../services/http";
-import { Link } from "react-router-dom";
+import http from "../../services/http";
 
 const Register = () => {
   const [username, setUsername] = useState("");
