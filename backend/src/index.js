@@ -14,8 +14,9 @@ app.use(cors());
 
 const username = process.env.MONGO_USERNAME;
 const password = process.env.MONGO_PASSWORD;
+const mongoConnectionString = `mongodb+srv://${username}:${password}@buzzlinemongo.xonfous.mongodb.net/?retryWrites=true&w=majority`;
 
-app.use(async (req, res, next) => {
+app.use((req, res, next) => {
   console.log(
     "Time:", 
     new Date().toISOString(),
@@ -24,9 +25,9 @@ app.use(async (req, res, next) => {
     "Route: ",
     req.path
   );
-  if (req.path !== "/login" && req.path !== "/register") {
-    req.root = await verify(req, res, next);
-  }
+  // if (req.path !== "/login" && req.path !== "/register") {
+  //   req.root = verify(req, res, next);
+  // }
   next();
   res.on("finish", function () {
     console.log("Response: ", res.statusCode);
@@ -46,17 +47,32 @@ import productRoutes from "./routers/product.router.js";
 import productTypeRoutes from "./routers/productType.router.js";
 import salesRoutes from "./routers/sales.router.js";
 
-app.use("/companies", companyRoutes);
-app.use("/products", productRoutes);
-app.use("/productTypes", productTypeRoutes);
-app.use("/sales", salesRoutes);
+
+app.use("/companies", verify, companyRoutes);
+app.use("/products", verify, productRoutes);
+app.use("/productTypes", verify, productTypeRoutes);
+app.use("/sales", verify, salesRoutes);
+
+// app.use((errorMessage, req, res, next) => {
+//   res.status(500).json({
+//     message: errorMessage
+//   });
+// });
+
+app.use('*', (req, res) => {
+  res.status(404).json({
+    message: 'Page not found',
+    error: {
+      statusCode: 404,
+      message: 'You reached a route that is not defined on this server',
+    },
+  });
+});
 
 const start = async () => {
   try {
-    await connect(
-      // TODO: real mongodb url!
-      `mongodb-url${username}+${password}`
-    );
+    console.log(mongoConnectionString);
+    await connect(mongoConnectionString);
     app.listen(3001, () => console.log("Server started on port 3001"));
   } catch (error) {
     console.error(error);
