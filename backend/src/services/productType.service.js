@@ -1,6 +1,6 @@
 import ProductType from "../models/productType.model.js";
 
-const getAllProductTypes = async () => await ProductType.find({});
+const getAllProductTypes = async () => await ProductType.find();
 
 const getProductTypeById = async (id) => await ProductType.findById(id);
 

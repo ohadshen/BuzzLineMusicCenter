@@ -23,4 +23,4 @@ const saleSchema = new Schema({
 
 const Post = model("Sale", saleSchema);
 
-export default { Post }; 
+export default Post;
