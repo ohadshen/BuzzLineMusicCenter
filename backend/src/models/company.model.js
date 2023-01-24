@@ -12,4 +12,4 @@ const companySchema = new Schema({
 
 const Post = model("Comapny", companySchema);
 
-export default { Post };
+export default Post;

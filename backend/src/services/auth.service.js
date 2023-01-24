@@ -4,7 +4,7 @@ import pkg from 'jsonwebtoken';
 const { sign, verify: _verify } = pkg;
 
 const authenticate = (req, res, next) => {
-  const { username, password } = req.body.body;
+  const { username, password } = req.body;
   User.findOne({ username }, (error, user) => {
     if (error) {
       res.status(500).json({ message: error });
@@ -36,6 +36,7 @@ const authenticate = (req, res, next) => {
 const verify = (req, res, next) => {
   const { authorization } = req.headers;
   if (!authorization) {
+    console.error("No authorization header");
     res.status(401).json({ message: "No authorization header" });
   } else {
     const token = authorization.split(" ")[1];
@@ -44,12 +45,14 @@ const verify = (req, res, next) => {
       process.env.JWT_SECRET,
       (error, decoded) => {
         if (error) {
+          console.error(error);
           res.status(401).json({ message: "Invalid token" });
         }
-        return decoded;
+        req.root = decoded;
       }
     );
-    return decoded;
+    req.root = decoded;
+    return next();
   }
 };
 

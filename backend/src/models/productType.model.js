@@ -9,4 +9,4 @@ const productTypeSchema = new Schema({
 
 const Post = model("ProductType", productTypeSchema);
 
-export default { Post };
+export default Post;
