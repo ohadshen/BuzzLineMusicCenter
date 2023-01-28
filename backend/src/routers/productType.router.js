@@ -1,19 +1,13 @@
-import { Router } from "express";
-import { getAllProductTypesController,
-    getProductTypeByIdController,
-    createProductTypeController,
-    deleteProductTypeController,
-    editProdctTypeController } from "../controllers/productType.controller.js";
-const router = Router();
-  
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var productType_controller_js_1 = require("../controllers/productType.controller.js");
+var router = (0, express_1.Router)();
 router.route("/")
-    .get(getAllProductTypesController)
-    .post(createProductTypeController)
-
+    .get(productType_controller_js_1.getAllProductTypesController)
+    .post(productType_controller_js_1.createProductTypeController);
 router.route("/:id")
-    .get(getProductTypeByIdController)
-    .put(editProdctTypeController)
-    .delete(deleteProductTypeController)
-
-export default router;
-  
+    .get(productType_controller_js_1.getProductTypeByIdController)
+    .put(productType_controller_js_1.editProdctTypeController)
+    .delete(productType_controller_js_1.deleteProductTypeController);
+exports.default = router;
