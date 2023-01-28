@@ -13,7 +13,6 @@ export const useGetProducts = () => {
       try {
         const response = await fetch("http://localhost:3001/products");
         const data = await response.json();
-        debugger;
         // const productTypes: ProductType[] = [
         //   {
         //     _id: "1",
