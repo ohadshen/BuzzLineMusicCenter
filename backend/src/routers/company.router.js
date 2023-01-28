@@ -1,19 +1,13 @@
-import { Router } from "express";
-import { getAllCompaniesController,
-        getCompanyByIdController,
-        createCompanyController,
-        deleteCompanyController,
-        editCompanyController } from "../controllers/company.controller.js";
-const router = Router();
-  
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var company_controller_js_1 = require("../controllers/company.controller.js");
+var router = (0, express_1.Router)();
 router.route("/")
-    .get(getAllCompaniesController)
-    .post(createCompanyController)
-
+    .get(company_controller_js_1.getAllCompaniesController)
+    .post(company_controller_js_1.createCompanyController);
 router.route("/:id")
-    .get(getCompanyByIdController)
-    .put(editCompanyController)
-    .delete(deleteCompanyController)
-
-export default router;
-  
+    .get(company_controller_js_1.getCompanyByIdController)
+    .put(company_controller_js_1.editCompanyController)
+    .delete(company_controller_js_1.deleteCompanyController);
+exports.default = router;

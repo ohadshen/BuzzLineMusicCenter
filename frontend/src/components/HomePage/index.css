@@ -1,0 +1,30 @@
+.productCard {
+    height: 10rem;
+    position:relative;
+    display: flex;
+    background-color: #5d37dbcc;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+}
+
+.cardImageContainer {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    object-fit: cover;   
+}
+
+.cardImage {
+    height:80%;
+    box-shadow: 0px 0px 10px #888888;
+    border-radius: 20% !important;
+}
+
+.cardRow {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
