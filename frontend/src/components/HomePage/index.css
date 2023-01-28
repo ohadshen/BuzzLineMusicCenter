@@ -1,8 +1,21 @@
+.container {
+    width: 80%;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+}
+
 .productCard {
     height: 10rem;
     position:relative;
     display: flex;
-    background-color: #5d37dbcc;
+    background-color: #139759;
     align-items: center;
     flex-direction: row;
     color: white;
@@ -17,12 +30,14 @@
 }
 
 .cardImage {
-    height:80%;
+    height: 125px;
+    width: 125px;
     box-shadow: 0px 0px 10px #888888;
     border-radius: 20% !important;
 }
 
 .cardRow {
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
