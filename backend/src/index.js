@@ -2,19 +2,21 @@
 import express, { json } from "express";
 import { connect } from "mongoose";
 import cors from "cors";
-import { User } from "./models/user.model.js";
-import { authenticate, verify } from "./services/auth.service.js";
-import * as dotenv from 'dotenv';
-dotenv.config()
+import { mongoConnectionString, serviceAccount } from "./config.js";
+import firebaseAdmin from 'firebase-admin';
 
 const app = express();
 
+firebaseAdmin.initializeApp({
+  credential: firebaseAdmin.credential.cert(serviceAccount),
+});
+
+export { firebaseAdmin };
+
+import { verify } from "./services/auth.service.js";
+
 app.use(json());
 app.use(cors());
-
-const username = process.env.MONGO_USERNAME;
-const password = process.env.MONGO_PASSWORD;
-const mongoConnectionString = `mongodb+srv://${username}:${password}@buzzlinemongo.xonfous.mongodb.net/?retryWrites=true&w=majority`;
 
 app.use((req, res, next) => {
   console.log(
@@ -25,21 +27,34 @@ app.use((req, res, next) => {
     "Route: ",
     req.path
   );
-  // if (req.path !== "/login" && req.path !== "/register") {
-  //   req.root = verify(req, res, next);
-  // }
   next();
   res.on("finish", function () {
     console.log("Response: ", res.statusCode);
   });
 });
 
-app.post("/login", authenticate);
-
 app.post("/register", async (req, res) => {
-  const newUser = new User({ ...req.body });
-  const insertedUser = await newUser.save();
-  return res.status(201).json(insertedUser);
+  const { email, username, password } = req.body;
+
+  firebaseAdmin.auth().createUser({
+    email,
+    displayName: username,
+    password
+  })
+  .then((user) => {
+      // Signed in
+      console.log(user);
+      return res.status(201).json({
+        email: user.email,
+        username: user.displayName
+      });
+    })
+    .catch((err) => {
+      console.error(err);
+      res.status(500).json({
+          message: "error creating User"
+      });
+    });
 });
 
 import companyRoutes from "./routers/company.router.js";
@@ -53,12 +68,6 @@ app.use("/products", productRoutes);
 app.use("/productTypes", productTypeRoutes);
 app.use("/sales", salesRoutes);
 
-// app.use((errorMessage, req, res, next) => {
-//   res.status(500).json({
-//     message: errorMessage
-//   });
-// });
-
 app.use('*', (req, res) => {
   res.status(404).json({
     message: 'Page not found',
@@ -71,7 +80,6 @@ app.use('*', (req, res) => {
 
 const start = async () => {
   try {
-    console.log(mongoConnectionString);
     await connect(mongoConnectionString);
     app.listen(3001, () => console.log("Server started on port 3001"));
   } catch (error) {
