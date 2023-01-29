@@ -7,6 +7,13 @@ import FilterSlider from "../FilterSlider";
 import { RiFilterOffLine } from "react-icons/ri";
 
 import "./index.css";
+import ProductCard from "../ProductCard";
+import {
+  ShoppingCart,
+  ShoppingCartContext,
+} from "../../context/shoppingCartContext";
+import CheckoutCard from "../CheckoutCard";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
   const { products, loading, error } = useGetProducts();
@@ -19,6 +26,12 @@ export default function HomePage() {
     min: number;
     max: number;
   }>({ min: 0, max: Number.MAX_VALUE });
+
+  const { cartProducts } = React.useContext(
+    ShoppingCartContext
+  ) as ShoppingCart;
+
+  const navigate = useNavigate();
 
   const clearFilters = () => {
     setSelectedCompany(null);
@@ -59,28 +72,13 @@ export default function HomePage() {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error!</div>;
 
-  const productCard = (product: Product) => (
-    <div className="row cardRow my-1">
-      <Card className="row productCard">
-        <div className="col-4 cardImageContainer">
-          <Card.Img className="cardImage" variant="top" src={product.image} />
-        </div>
-        <div className="col-8">
-          <Card.Body>
-            <Card.Title>{product.name}</Card.Title>
-            <Card.Text>company:{product.company.name}</Card.Text>
-            <Card.Text>price:{product.price}</Card.Text>
-          </Card.Body>
-        </div>
-      </Card>
-    </div>
-  );
-
   return (
-    <div className="container justify-content-center">
-      <div className="row filters">
-        <div className="col-1 mx-1">{clearFiltersIconButton}</div>
-        <div className="col-2 mx-1">
+    <>
+      <div className="row filters justify-content-center">
+        <div className="col-2 d-flex justify-content-center">
+          {clearFiltersIconButton}
+        </div>
+        <div className="col-2 d-flex justify-content-center">
           <FilterDropdown
             options={products
               .map((product) => {
@@ -95,7 +93,7 @@ export default function HomePage() {
             }}
           />
         </div>
-        <div className="col-2 mx-1">
+        <div className="col-2 d-flex justify-content-center">
           <FilterDropdown
             options={products
               .map((product) => {
@@ -110,7 +108,7 @@ export default function HomePage() {
             }}
           />
         </div>
-        <div className="col-3 mx-1">
+        <div className="col-2 d-flex justify-content-center">
           <FilterSlider
             min={Math.min(...products.map((product) => product.price))}
             max={Math.max(...products.map((product) => product.price))}
@@ -120,9 +118,11 @@ export default function HomePage() {
           />
         </div>
       </div>
-      {filteredProducts.map((product) => {
-        return productCard(product);
-      })}
-    </div>
+      <div className="innerContainer justify-content-center">
+        {filteredProducts.map((product) => (
+          <ProductCard product={product} />
+        ))}
+      </div>
+    </>
   );
 }

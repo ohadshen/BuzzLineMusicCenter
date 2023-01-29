@@ -1,0 +1,12 @@
+.checkoutCardContainer {
+    justify-content: center;
+}
+
+.checkoutCard {
+    display: flex;
+    width: 50%;
+}
+
+.saleDetails{
+    width: 100%;
+}

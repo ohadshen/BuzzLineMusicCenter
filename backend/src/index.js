@@ -53,12 +53,6 @@ app.use("/products", productRoutes);
 app.use("/productTypes", productTypeRoutes);
 app.use("/sales", salesRoutes);
 
-// app.use((errorMessage, req, res, next) => {
-//   res.status(500).json({
-//     message: errorMessage
-//   });
-// });
-
 app.use('*', (req, res) => {
   res.status(404).json({
     message: 'Page not found',

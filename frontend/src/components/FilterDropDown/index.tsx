@@ -33,7 +33,7 @@ export default function FilterDropdown({
         onSelect(eventKey as string);
       }}
     >
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
+      <Dropdown.Toggle variant="light" id="dropdown-basic">
         {title}
       </Dropdown.Toggle>
 
