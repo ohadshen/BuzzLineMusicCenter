@@ -1,11 +1,15 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var express_1 = require("express");
-var sale_controller_js_1 = require("../controllers/sale.controller.js");
-var router = (0, express_1.Router)();
+import { Router } from "express";
+import { getAllSalesController,
+    getSaleByIdController,
+    createSaleController } from "../controllers/sale.controller.js";
+const router = Router();
+  
 router.route("/")
-    .get(sale_controller_js_1.getAllSalesController)
-    .post(sale_controller_js_1.createSaleController);
+    .get(getAllSalesController)
+    .post(createSaleController)
+
 router.route("/:id")
-    .get(sale_controller_js_1.getSaleByIdController);
-exports.default = router;
+    .get(getSaleByIdController)
+
+export default router;
+  
