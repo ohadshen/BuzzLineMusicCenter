@@ -6,9 +6,9 @@ const saleSchema = new Schema({
     ref: "Product",
     required: true,
   }],
+  // Foreign key to firebase users
   user: {
-    type: Schema.Types.ObjectId,
-    ref: "User",
+    type: String,
     required: true,
   },
   date: {
