@@ -1,0 +1,24 @@
+.email-form-group {
+    margin-top: 20px;
+}
+
+.title {
+    margin-top: 20px;
+    color:rgb(35, 192, 142);
+}
+
+.login-button {
+    margin-top: 20px;
+}
+
+.register-link {
+    color:rgb(35, 192, 142);
+    text-decoration: none;
+}
+.register-link:hover {
+    color:rgb(47, 222, 167);
+}
+
+.password-confirm {
+    margin-top: 5px;
+}

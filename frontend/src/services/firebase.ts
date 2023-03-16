@@ -1,5 +1,15 @@
 import firebase from 'firebase/compat/app';
 
+const LoginFirebase = async (email: string, password: string): Promise<void> => {
+    try {
+        const userCredentials = await firebase.auth().signInWithEmailAndPassword(email, password);
+        firebase.auth().currentUser.getIdToken().then((token) => {
+            localStorage.setItem("token", token);
+        });
+    } catch (error) {
+        throw error;
+    }
+  }
 
 const firebaseConfig = {
     apiKey: "AIzaSyCU0BxqK1LleTpwV4nbanT6hWhBzvGRs6A",
@@ -13,3 +23,4 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 export default firebase;
+export { LoginFirebase };

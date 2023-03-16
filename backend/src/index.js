@@ -34,11 +34,11 @@ app.use((req, res, next) => {
 });
 
 app.post("/register", async (req, res) => {
-  const { email, username, password } = req.body;
+  const { email, displayName, password } = req.body;
 
   firebaseAdmin.auth().createUser({
     email,
-    displayName: username,
+    displayName,
     password
   })
   .then((user) => {
@@ -46,7 +46,7 @@ app.post("/register", async (req, res) => {
       console.log(user);
       return res.status(201).json({
         email: user.email,
-        username: user.displayName
+        displayName: user.displayName
       });
     })
     .catch((err) => {
