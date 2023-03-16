@@ -63,10 +63,10 @@ import productTypeRoutes from "./routers/productType.router.js";
 import salesRoutes from "./routers/sales.router.js";
 
 
-app.use("/companies", companyRoutes);
-app.use("/products", productRoutes);
-app.use("/productTypes", productTypeRoutes);
-app.use("/sales", salesRoutes);
+app.use("/companies", verify, companyRoutes);
+app.use("/products", verify, productRoutes);
+app.use("/productTypes", verify, productTypeRoutes);
+app.use("/sales", verify, salesRoutes);
 
 app.use('*', (req, res) => {
   res.status(404).json({

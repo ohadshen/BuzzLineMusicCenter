@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Company } from "../models/company.model";
 import { Product } from "../models/product.model";
 import { ProductType } from "../models/productType.model";
+import http from "../services/http";
 
 export const useGetProducts = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -11,8 +12,8 @@ export const useGetProducts = () => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const response = await fetch("http://localhost:3001/products");
-        const data = await response.json();
+        const response = await http.get<Product[]>("/products");
+        const data = response.data;
         // const productTypes: ProductType[] = [
         //   {
         //     _id: "1",
