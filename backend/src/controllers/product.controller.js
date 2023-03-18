@@ -2,7 +2,8 @@ import { getAllProducts,
     getProductById,
     createProduct,
     deleteProduct,
-    editProduct } from "../services/product.service.js";
+    editProduct,
+    getProductsValueForCompanies } from "../services/product.service.js";
 import { sendError } from "../shared/errorHandler.js";
 
 import {io} from "../services/socketio.service.js";
@@ -53,8 +54,17 @@ const editProductController = async (req, res) => {
     }
 }
 
+const getProductsValueForCompaniesController = async (req, res) => {
+    try {
+        res.json(await getProductsValueForCompanies());
+    } catch(err) {
+        sendError('error get Products value for companies', err, res);
+    }
+}
+
 export { getAllProductsController,
         getProductByIdController,
         createProductController,
         deleteProductController,
-        editProductController };
+        editProductController,
+        getProductsValueForCompaniesController };
