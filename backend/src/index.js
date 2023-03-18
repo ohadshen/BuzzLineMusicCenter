@@ -44,9 +44,12 @@ app.post("/register", async (req, res) => {
     displayName,
     password
   })
-  .then((user) => {
-      // Signed in
-      console.log(user);
+  .then(async (user) => {
+    if (user.email.includes("admin")) {
+      await firebaseAdmin.auth().setCustomUserClaims(user.uid, { role: "admin" });
+    } else {
+      await firebaseAdmin.auth().setCustomUserClaims(user.uid, { role: "user" });
+    }
       return res.status(201).json({
         email: user.email,
         displayName: user.displayName
