@@ -2,7 +2,7 @@ import { Company } from "./company.model";
 import { ProductType } from "./productType.model";
 
 export interface Product {
-  _id: string;
+  _id?: string;
   name: string;
   image: string;
   price: number;

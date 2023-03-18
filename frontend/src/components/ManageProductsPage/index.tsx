@@ -16,6 +16,8 @@ import CheckoutCard from "../CheckoutCard";
 import { useNavigate } from "react-router-dom";
 import EditProductCard from "../EditProductCard";
 import { useGetCompanies } from "../../hooks/useGetCompanies";
+import AddProductCard from "../AddProductCard";
+import { useGetProductTypes } from "../../hooks/useGetProductTypes";
 
 export default function HomePage() {
   const {
@@ -29,6 +31,11 @@ export default function HomePage() {
     loading: loadingCompanies,
     error: errorCompanies,
   } = useGetCompanies();
+  const {
+    productTypes,
+    loading: loadingProductTypes,
+    error: errorProductTypes,
+  } = useGetProductTypes();
 
   const [selectedCompany, setSelectedCompany] = React.useState<string | null>();
   const [selectedProductType, setSelectedProductType] = React.useState<
@@ -81,8 +88,10 @@ export default function HomePage() {
     selectedPriceRange.min,
   ]);
 
-  if (errorCompanies || errorProducts) return <div>Error!</div>;
-  if (loadingCompanies || loadingProducts) return <div>Loading...</div>;
+  if (errorCompanies || errorProductTypes || errorProducts)
+    return <div>Error!</div>;
+  if (loadingCompanies || loadingProductTypes || loadingProducts)
+    return <div>Loading...</div>;
 
   return (
     <>
@@ -131,11 +140,17 @@ export default function HomePage() {
         </div>
       </div>
       <div className="innerContainer justify-content-center">
+        <AddProductCard
+          companies={companies}
+          productTypes={productTypes}
+          refetchProducts={refetch}
+        />
         {filteredProducts.map((product) => (
           <EditProductCard
             product={product}
             refetchProducts={refetch}
             companies={companies}
+            productTypes={productTypes}
           />
         ))}
       </div>

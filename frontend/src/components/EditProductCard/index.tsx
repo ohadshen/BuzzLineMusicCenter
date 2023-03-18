@@ -8,20 +8,24 @@ import { useGetCompanies } from "../../hooks/useGetCompanies";
 import { deleteProduct, updateProduct } from "../../services/products";
 import CustomDropdown from "../DropDown";
 import { Company } from "../../models/company.model";
+import { ProductType } from "../../models/productType.model";
 
 export default function EditProductCard({
   product,
   companies,
-  isCheckout = false,
+  productTypes,
   refetchProducts,
 }: {
   product: Product;
   companies: Company[];
-  isCheckout?: boolean;
+  productTypes: ProductType[];
   refetchProducts: () => void;
 }) {
   const [onEdit, setOnEdit] = React.useState(false);
   const [newCompany, setNewCompany] = React.useState<Company | undefined>();
+  const [newProductType, setNewProductType] = React.useState<
+    ProductType | undefined
+  >();
   const [newPrice, setNewPrice] = React.useState<number | undefined>();
   const [newName, setNewName] = React.useState<string | undefined>();
   const [newImage, setNewImage] = React.useState<string | undefined>();
@@ -32,6 +36,8 @@ export default function EditProductCard({
       ...product,
       name: newName === undefined ? product.name : newName,
       company: newCompany === undefined ? product.company : newCompany,
+      productType:
+        newProductType === undefined ? product.productType : newProductType,
       price: newPrice === undefined ? product.price : newPrice,
       image: newImage === undefined ? product.image : newImage,
     };
@@ -73,27 +79,58 @@ export default function EditProductCard({
                   />
                 )}
               </Card.Text>
-              <Card.Text>
-                company:
-                {!onEdit ? (
-                  <div>{product.company.name}</div>
-                ) : (
-                  <CustomDropdown
-                    title={
-                      !!newCompany ? newCompany.name : product.company.name
-                    }
-                    options={companies.map((company) => company.name)}
-                    onSelect={(companyName) =>
-                      setNewCompany(
-                        companies.find(
-                          (company) => company.name === companyName
-                        )
-                      )
-                    }
-                  />
-                )}
-              </Card.Text>
 
+              <div className="row">
+                <div className="col-6 d-flex">
+                  <Card.Text>
+                    company:
+                    {!onEdit ? (
+                      <div>{product.company.name}</div>
+                    ) : (
+                      <CustomDropdown
+                        title={
+                          !!newCompany ? newCompany.name : product.company.name
+                        }
+                        options={companies.map((company) => company.name)}
+                        onSelect={(companyName) =>
+                          setNewCompany(
+                            companies.find(
+                              (company) => company.name === companyName
+                            )
+                          )
+                        }
+                      />
+                    )}
+                  </Card.Text>
+                </div>
+                <div className="col-6 d-flex">
+                  <Card.Text>
+                    product type:
+                    {!onEdit ? (
+                      <div>{product.productType.name}</div>
+                    ) : (
+                      <CustomDropdown
+                        title={
+                          !!newProductType
+                            ? newProductType.name
+                            : product.productType.name
+                        }
+                        options={productTypes.map(
+                          (productType) => productType.name
+                        )}
+                        onSelect={(productTypeName) =>
+                          setNewProductType(
+                            productTypes.find(
+                              (productType) =>
+                                productType.name === productTypeName
+                            )
+                          )
+                        }
+                      />
+                    )}
+                  </Card.Text>
+                </div>
+              </div>
               <Card.Text>
                 price:
                 {!onEdit ? (
@@ -136,7 +173,6 @@ export default function EditProductCard({
             className="costumeBtn"
             onClick={() => setOnEdit(true)}
           >
-            <br />
             Edit
           </Button>
         )}
@@ -146,13 +182,11 @@ export default function EditProductCard({
             className="dangerBtn"
             onClick={handleDelete}
           >
-            <br />
             Delete
           </Button>
         )}
         {onEdit && (
           <Button variant="secondary" className="costumeBtn" type="submit">
-            <br />
             Save
           </Button>
         )}
@@ -163,7 +197,6 @@ export default function EditProductCard({
             className="costumeBtn"
             onClick={() => setOnEdit(false)}
           >
-            <br />
             Cancel
           </Button>
         )}
