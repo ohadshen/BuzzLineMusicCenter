@@ -18,6 +18,8 @@ const FilterSlider = ({ min, max, onChange }) => {
 
   // Set width of the range to decrease from the left side
   useEffect(() => {
+    console.count("first");
+
     const minPercent = getPercent(minVal);
     const maxPercent = getPercent(maxValRef.current);
 
@@ -29,6 +31,8 @@ const FilterSlider = ({ min, max, onChange }) => {
 
   // Set width of the range to decrease from the right side
   useEffect(() => {
+    console.count("second");
+
     const minPercent = getPercent(minValRef.current);
     const maxPercent = getPercent(maxVal);
 
@@ -39,8 +43,10 @@ const FilterSlider = ({ min, max, onChange }) => {
 
   // Get min and max values when their state changes
   useEffect(() => {
+    console.count("third");
+
     onChange({ min: minVal, max: maxVal });
-  }, [minVal, maxVal, onChange]);
+  }, [minVal, maxVal]);
 
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>

@@ -1,19 +1,17 @@
 import { useEffect, useState } from "react";
 import { Company } from "../models/company.model";
-import { Product } from "../models/product.model";
-import { ProductType } from "../models/productType.model";
 import http from "../services/http";
 
-export const useGetProducts = () => {
-  const [products, setProducts] = useState<Product[]>([]);
+export const useGetCompanies = () => {
+  const [companies, setCompanies] = useState<Company[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>("");
 
-  const getProducts = async () => {
+  const getCompanies = async () => {
     try {
-      const response = await http.get<Product[]>("/products");
+      const response = await http.get<Company[]>("/companies");
       const data = response.data;
-      setProducts(data);
+      setCompanies(data);
       setLoading(false);
     } catch (error) {
       setError(error);
@@ -22,8 +20,8 @@ export const useGetProducts = () => {
   };
 
   useEffect(() => {
-    getProducts();
+    getCompanies();
   }, []);
 
-  return { products, loading, error, refetch: getProducts };
+  return { companies, loading, error, getCompanies };
 };
