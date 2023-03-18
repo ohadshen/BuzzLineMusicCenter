@@ -21,13 +21,12 @@ const getSaleByIdController = async (req, res) => {
     }
 }
 
-const createSaleController = async (req, res) => { 
-    const user = req.root;
-    const totalPrice = req.products.reduce(
-        (total, product) => total + getProductById(product).price
+const createSaleController = async (req, res) => {
+    const totalPrice = req.body.products.reduce(
+        (total, product) => total + product.price
         , 0);
     try {
-        res.json(await createSale({ ...req.body, user: user.id, date: new Date(), totalPrice }));
+        res.json(await createSale({ ...req.body, user: req.user.user_id, date: new Date(), totalPrice }));
     } catch(err) {
         sendError('error creating Sale', err, res);
     }

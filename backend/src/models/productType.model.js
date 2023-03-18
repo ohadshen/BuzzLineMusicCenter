@@ -7,6 +7,6 @@ const productTypeSchema = new Schema({
   }
 });
 
-const Post = model("ProductType", productTypeSchema);
+const ProductType = model("ProductType", productTypeSchema);
 
-export default Post;
+export default ProductType;

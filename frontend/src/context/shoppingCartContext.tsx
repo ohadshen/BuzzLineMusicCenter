@@ -4,6 +4,7 @@ import { Product } from "../models/product.model";
 export interface ShoppingCart {
   cartProducts: Product[];
   addProduct: (product: Product) => void;
+  clearProducts: () => void;
 }
 
 export const ShoppingCartContext = React.createContext({});
@@ -15,9 +16,14 @@ export const ShoppingCartProvider = ({ children }) => {
     setCartProducts([...cartProducts, product]);
   };
 
+  const clearProducts = () => {
+    setCartProducts([]);
+  };
+
   const value: ShoppingCart = {
     cartProducts,
     addProduct,
+    clearProducts,
   };
 
   return (

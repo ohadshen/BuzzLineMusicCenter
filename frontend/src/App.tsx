@@ -8,10 +8,7 @@ import Router from "./router";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import React from "react";
-import {
-  ShoppingCartContext,
-  ShoppingCartProvider,
-} from "./context/shoppingCartContext";
+import { ShoppingCartProvider } from "./context/shoppingCartContext";
 
 const queryClient = new QueryClient();
 
