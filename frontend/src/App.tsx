@@ -7,20 +7,27 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Router from "./router";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import React from "react";
+import { ShoppingCartProvider } from "./context/shoppingCartContext";
+import { SocketIOProvider } from "./context/socketIOContext";
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <div className="App">
-          <AppNavbar />
-          <div className="container">
-            <Router />
-          </div>
-        </div>
-      </BrowserRouter>
+      <SocketIOProvider>
+        <ShoppingCartProvider>
+          <BrowserRouter>
+            <div className="App">
+              <AppNavbar />
+              <div className="container">
+                <Router />
+              </div>
+            </div>
+          </BrowserRouter>
+        </ShoppingCartProvider>
+      </SocketIOProvider>
     </QueryClientProvider>
   );
 }

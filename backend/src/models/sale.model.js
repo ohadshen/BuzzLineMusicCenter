@@ -6,9 +6,9 @@ const saleSchema = new Schema({
     ref: "Product",
     required: true,
   }],
+  // Foreign key to firebase users
   user: {
-    type: Schema.Types.ObjectId,
-    ref: "User",
+    type: String,
     required: true,
   },
   date: {
@@ -21,6 +21,6 @@ const saleSchema = new Schema({
   }
 });
 
-const Post = model("Sale", saleSchema);
+const Sale = model("Sale", saleSchema);
 
-export default Post;
+export default Sale;

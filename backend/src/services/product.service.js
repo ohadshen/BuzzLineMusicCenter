@@ -10,6 +10,6 @@ const createProduct = async (product) => await Product.create(product);
 
 const deleteProduct = async (id) => await Product.findByIdAndDelete(id);
 
-const editProduct = async (product) => await Product.findByIdAndUpdate(product.id, product);
+const editProduct = async (product) => await Product.findByIdAndUpdate(product._id, product);
 
 export { getAllProducts, getProductById, createProduct, deleteProduct, editProduct };

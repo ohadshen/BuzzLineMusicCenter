@@ -10,6 +10,6 @@ const companySchema = new Schema({
   }
 });
 
-const Post = model("Comapny", companySchema);
+const Post = model("Company", companySchema);
 
 export default Post;

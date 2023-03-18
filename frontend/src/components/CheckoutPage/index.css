@@ -1,0 +1,40 @@
+
+
+.checkoutContainer {
+    width: 70%;
+}
+
+
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.innerContainer {
+    width:70%;
+}
+
+.cardImageContainer {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+}
+
+.cardImage {
+    height: 125px;
+    width: 125px;
+    box-shadow: 0px 0px 10px #888888;
+    border-radius: 20% !important;
+}
+
+
+.checkoutCardAndButton {
+    margin-top: 1rem;
+}

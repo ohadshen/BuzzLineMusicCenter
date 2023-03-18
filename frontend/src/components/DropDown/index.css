@@ -1,0 +1,16 @@
+/*This is modifying the costumeDropdown colors but you could create your own .btn-something class as well*/
+.costumeDropdown {
+    color: #fff;
+    background-color: rgb(35, 192, 142);
+    /*set the color you want here*/
+}
+
+.costumeDropdown:hover,
+.costumeDropdown:focus,
+.costumeDropdown:active,
+.costumeDropdown.active,
+.open>.dropdown-toggle.costumeDropdown {
+    color: #fff;
+    background-color: rgb(35, 192, 142);
+    /*set the color you want here*/
+}
