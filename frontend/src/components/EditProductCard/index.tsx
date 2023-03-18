@@ -41,11 +41,8 @@ export default function EditProductCard({
       price: newPrice === undefined ? product.price : newPrice,
       image: newImage === undefined ? product.image : newImage,
     };
-    console.log("product update in progress");
 
     await updateProduct(editedProduct._id, editedProduct);
-
-    console.log("updated product");
 
     await refetchProducts();
     setOnEdit(false);

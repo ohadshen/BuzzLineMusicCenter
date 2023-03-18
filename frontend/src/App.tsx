@@ -9,22 +9,25 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import React from "react";
 import { ShoppingCartProvider } from "./context/shoppingCartContext";
+import { SocketIOProvider } from "./context/socketIOContext";
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <ShoppingCartProvider>
-        <BrowserRouter>
-          <div className="App">
-            <AppNavbar />
-            <div className="container">
-              <Router />
+      <SocketIOProvider>
+        <ShoppingCartProvider>
+          <BrowserRouter>
+            <div className="App">
+              <AppNavbar />
+              <div className="container">
+                <Router />
+              </div>
             </div>
-          </div>
-        </BrowserRouter>
-      </ShoppingCartProvider>
+          </BrowserRouter>
+        </ShoppingCartProvider>
+      </SocketIOProvider>
     </QueryClientProvider>
   );
 }

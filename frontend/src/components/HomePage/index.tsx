@@ -1,7 +1,6 @@
-import React, { useMemo } from "react";
-import { Button, Card, Dropdown } from "react-bootstrap";
+import React, { useContext, useEffect, useMemo } from "react";
+import { Button } from "react-bootstrap";
 import { useGetProducts } from "../../hooks/useGetProducts";
-import { Product } from "../../models/product.model";
 import CustomDropdown from "../DropDown";
 import FilterSlider from "../FilterSlider";
 import { RiFilterOffLine } from "react-icons/ri";
@@ -9,14 +8,13 @@ import { RiFilterOffLine } from "react-icons/ri";
 import "./index.css";
 import ProductCard from "../ProductCard";
 import {
-  ShoppingCart,
-  ShoppingCartContext,
-} from "../../context/shoppingCartContext";
-import CheckoutCard from "../CheckoutCard";
-import { useNavigate } from "react-router-dom";
+  SocketIOContext,
+  SocketIOContextValue,
+} from "../../context/socketIOContext";
+import { REFETCH_PRODUCTS_EVENT } from "../../events";
 
 export default function HomePage() {
-  const { products, loading, error } = useGetProducts();
+  const { products, loading, error, refetch } = useGetProducts();
 
   const [selectedCompany, setSelectedCompany] = React.useState<string | null>();
   const [selectedProductType, setSelectedProductType] = React.useState<
@@ -27,11 +25,23 @@ export default function HomePage() {
     max: number;
   }>({ min: 0, max: Number.MAX_VALUE });
 
-  const { cartProducts } = React.useContext(
-    ShoppingCartContext
-  ) as ShoppingCart;
+  const { socket } = useContext(SocketIOContext) as SocketIOContextValue;
 
-  const navigate = useNavigate();
+  const minPrice = useMemo(() => {
+    return Math.min(...products.map((product) => product.price));
+  }, [products]);
+
+  const maxPrice = useMemo(() => {
+    return Math.max(...products.map((product) => product.price));
+  }, [products]);
+
+  useEffect(() => {
+    if (socket) socket.on(REFETCH_PRODUCTS_EVENT, () => refetch());
+
+    return () => {
+      if (socket) socket.off(REFETCH_PRODUCTS_EVENT);
+    };
+  }, [refetch, socket]);
 
   const clearFilters = () => {
     setSelectedCompany(null);
@@ -110,8 +120,8 @@ export default function HomePage() {
         </div>
         <div className="col-2 d-flex justify-content-center">
           <FilterSlider
-            min={Math.min(...products.map((product) => product.price))}
-            max={Math.max(...products.map((product) => product.price))}
+            min={minPrice}
+            max={maxPrice}
             onChange={(value) => {
               setSelectedPriceRange(value);
             }}

@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useState, useRef } from "react";
 import PropTypes from "prop-types";
 import "./index.css";
-import { Tooltip } from "react-bootstrap";
 
 const FilterSlider = ({ min, max, onChange }) => {
   const [minVal, setMinVal] = useState(min);
@@ -10,7 +9,14 @@ const FilterSlider = ({ min, max, onChange }) => {
   const maxValRef = useRef(max);
   const range = useRef(null);
 
-  // Convert to percentage
+  useEffect(() => {
+    minValRef.current = min;
+    maxValRef.current = max;
+    setMinVal(min);
+    setMaxVal(max);
+  }, [min, max]);
+
+  // make a useCallback implement of getPercent
   const getPercent = useCallback(
     (value) => Math.round(((value - min) / (max - min)) * 100),
     [min, max]
@@ -18,7 +24,8 @@ const FilterSlider = ({ min, max, onChange }) => {
 
   // Set width of the range to decrease from the left side
   useEffect(() => {
-    console.count("first");
+    console.log("first minPrecent:", getPercent(minVal));
+    console.log("first maxPrecent:", getPercent(maxValRef.current));
 
     const minPercent = getPercent(minVal);
     const maxPercent = getPercent(maxValRef.current);
@@ -31,7 +38,10 @@ const FilterSlider = ({ min, max, onChange }) => {
 
   // Set width of the range to decrease from the right side
   useEffect(() => {
-    console.count("second");
+    console.log("minref current:", minValRef.current);
+
+    console.log("second minPrecent:", getPercent(minValRef.current));
+    console.log("second maxPrecent:", getPercent(maxVal));
 
     const minPercent = getPercent(minValRef.current);
     const maxPercent = getPercent(maxVal);
@@ -43,16 +53,9 @@ const FilterSlider = ({ min, max, onChange }) => {
 
   // Get min and max values when their state changes
   useEffect(() => {
-    console.count("third");
-
     onChange({ min: minVal, max: maxVal });
   }, [minVal, maxVal]);
 
-  const renderTooltip = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-      Simple tooltip
-    </Tooltip>
-  );
   return (
     <div className="sliderContainer">
       <div className="sliderInnerContainer">

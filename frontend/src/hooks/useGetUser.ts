@@ -6,8 +6,8 @@ export const useGetUser = (): User => {
 
   if (token) {
     const user = jwt(token) as User;
-    return { name: user.name, email: user.email };
+    return { name: user.name, email: user.email, role: user.role };
   }
 
-  return { name: "", email: "" };
+  return { name: "", email: "", role: "" };
 };

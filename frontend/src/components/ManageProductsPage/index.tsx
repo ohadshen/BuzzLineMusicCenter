@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useContext, useEffect, useMemo } from "react";
 import { Button, Card, Dropdown } from "react-bootstrap";
 import { useGetProducts } from "../../hooks/useGetProducts";
 import { Product } from "../../models/product.model";
@@ -18,6 +18,11 @@ import EditProductCard from "../EditProductCard";
 import { useGetCompanies } from "../../hooks/useGetCompanies";
 import AddProductCard from "../AddProductCard";
 import { useGetProductTypes } from "../../hooks/useGetProductTypes";
+import { REFETCH_PRODUCTS_EVENT } from "../../events";
+import {
+  SocketIOContext,
+  SocketIOContextValue,
+} from "../../context/socketIOContext";
 
 export default function HomePage() {
   const {
@@ -46,11 +51,15 @@ export default function HomePage() {
     max: number;
   }>({ min: 0, max: Number.MAX_VALUE });
 
-  const { cartProducts } = React.useContext(
-    ShoppingCartContext
-  ) as ShoppingCart;
+  const { socket } = useContext(SocketIOContext) as SocketIOContextValue;
 
-  const navigate = useNavigate();
+  useEffect(() => {
+    if (socket) socket.on(REFETCH_PRODUCTS_EVENT, () => refetch());
+
+    return () => {
+      if (socket) socket.off(REFETCH_PRODUCTS_EVENT);
+    };
+  }, [refetch, socket]);
 
   const clearFilters = () => {
     setSelectedCompany(null);

@@ -12,36 +12,45 @@ import { LogoutFirebase } from "../../services/firebase";
 const AppNavbar = () => {
   const navigate = useNavigate();
 
-  const { name } = useGetUser();
+  const { name, role } = useGetUser();
+  debugger;
   return (
     <Navbar variant="dark" className="navbar">
       <Navbar.Brand href="/" className="brand">
         BuzzLine
       </Navbar.Brand>
-      <CheckoutNavButton
-        onClick={() => {
-          navigate("/checkout");
-        }}
-      />
-      {name ? (
-        <Nav className="ml-2">
-          <Navbar.Text>Hello {name}!</Navbar.Text>
-          <Nav.Link
-            onClick={() => {
-              LogoutFirebase().then(() => {
-                navigate("/login");
-              });
-            }}
-          >
-            Logout
-          </Nav.Link>
-        </Nav>
-      ) : (
-        <Nav className="ml-2">
-          <Nav.Link href="/login">Login</Nav.Link>
-          <Nav.Link href="/register">Register</Nav.Link>
-        </Nav>
-      )}
+      <div className="me-4">
+        <CheckoutNavButton
+          onClick={() => {
+            navigate("/checkout");
+          }}
+        />
+      </div>
+      <Nav>
+        {name ? (
+          <>
+            <Navbar.Text className="greetingText">Hello {name}!</Navbar.Text>
+            <Nav.Link
+              onClick={() => {
+                LogoutFirebase().then(() => {
+                  navigate("/login");
+                });
+              }}
+            >
+              Logout
+            </Nav.Link>
+          </>
+        ) : (
+          <>
+            <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link href="/register">Register</Nav.Link>
+          </>
+        )}
+
+        {/* {role === "admin" ? ( */}
+        <Nav.Link href="/manageProducts">Manage Products</Nav.Link>
+        {/* ) : null} */}
+      </Nav>
     </Navbar>
   );
 };

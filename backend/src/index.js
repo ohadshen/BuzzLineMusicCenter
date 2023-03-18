@@ -4,8 +4,11 @@ import { connect } from "mongoose";
 import cors from "cors";
 import { mongoConnectionString, serviceAccount } from "./config.js";
 import firebaseAdmin from 'firebase-admin';
+import http from 'http';
+import { initSocketIO } from "./services/socketio.service.js";
 
 const app = express();
+const server = http.createServer(app);
 
 firebaseAdmin.initializeApp({
   credential: firebaseAdmin.credential.cert(serviceAccount),
@@ -63,6 +66,8 @@ import productTypeRoutes from "./routers/productType.router.js";
 import salesRoutes from "./routers/sales.router.js";
 
 
+
+
 app.use("/companies", verify, companyRoutes);
 app.use("/products", verify, productRoutes);
 app.use("/productTypes", verify, productTypeRoutes);
@@ -81,7 +86,9 @@ app.use('*', (req, res) => {
 const start = async () => {
   try {
     await connect(mongoConnectionString);
-    app.listen(3001, () => console.log("Server started on port 3001"));
+    server.listen(3001, () => console.log("Server started on port 3001"));
+    initSocketIO(server)
+
   } catch (error) {
     console.error(error);
     process.exit(1);
