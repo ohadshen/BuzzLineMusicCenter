@@ -48,7 +48,10 @@ const AppNavbar = () => {
         )}
 
         {role === "admin" ? (
-        <Nav.Link href="/manageProducts">Manage Products</Nav.Link>
+          <>
+            <Nav.Link href="/manageProducts">Manage Products</Nav.Link>
+            <Nav.Link href="/statistics">Statistics</Nav.Link>
+          </>
         ) : null }
       </Nav>
     </Navbar>

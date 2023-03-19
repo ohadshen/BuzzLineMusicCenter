@@ -3,7 +3,9 @@ import { getAllProductsController,
     getProductByIdController,
     createProductController,
     deleteProductController,
-    editProductController } from "../controllers/product.controller.js";
+    editProductController,
+    getProductsValueForCompaniesController,
+    getNumOfProductsForCompaniesController } from "../controllers/product.controller.js";
 const router = Router();
   
 router.route("/")
@@ -14,6 +16,12 @@ router.route("/:id")
     .get(getProductByIdController)
     .put(editProductController)
     .delete(deleteProductController)
+
+router.route("/companies/value")
+    .get(getProductsValueForCompaniesController)
+
+router.route("/companies/count")
+    .get(getNumOfProductsForCompaniesController)
 
 export default router;
   
