@@ -1,13 +1,14 @@
 import { getAllSales,
     getSaleById,
-    createSale } from "../services/sale.service.js";
+    createSale, 
+    getAllUserSales} from "../services/sale.service.js";
 import { getProductById } from "../services/product.service.js";
 import { sendError } from "../shared/errorHandler.js";
 
 
 const getAllSalesController = async (req, res) => {
     try {
-        res.json(await getAllSales());
+        req.user.user_id ? res.json(await getAllUserSales(req.user.user_id)) : sendError('error get user sales, no user in request');
     } catch(err) {
         sendError('error get all Sales', err, res);
     }
