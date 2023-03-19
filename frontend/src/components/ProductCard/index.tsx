@@ -26,7 +26,7 @@ export default function ProductCard({
         <div className="col-6">
           <Card.Body>
             <Card.Title>{product.name}</Card.Title>
-            <Card.Text>company:{product.company.name}</Card.Text>
+            <Card.Text>company:{product.company?.name}</Card.Text>
             <Card.Text>price:{product.price}</Card.Text>
           </Card.Body>
         </div>

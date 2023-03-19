@@ -18,6 +18,7 @@ const Register = () => {
 
       http.post<User>("/register", user).then((response) => {
         console.log(response.data.email);
+        debugger;
         LoginFirebase(email, password)
           .then(() => {
             navigate("/");

@@ -12,8 +12,7 @@ import { LogoutFirebase } from "../../services/firebase";
 const AppNavbar = () => {
   const navigate = useNavigate();
 
-  const { name, role } = useGetUser();
-  debugger;
+  const { name, role, email } = useGetUser();
   return (
     <Navbar variant="dark" className="navbar">
       <Navbar.Brand href="/" className="brand">
@@ -27,9 +26,9 @@ const AppNavbar = () => {
         />
       </div>
       <Nav>
-        {name ? (
+        {email ? (
           <>
-            <Navbar.Text className="greetingText">Hello {name}!</Navbar.Text>
+            <Navbar.Text className="greetingText">Hello {email}!</Navbar.Text>
             <Nav.Link
               onClick={() => {
                 LogoutFirebase().then(() => {
@@ -52,7 +51,8 @@ const AppNavbar = () => {
             <Nav.Link href="/manageProducts">Manage Products</Nav.Link>
             <Nav.Link href="/statistics">Statistics</Nav.Link>
           </>
-        ) : null }
+        ) : null}
+        <Nav.Link href="/sales">Sales</Nav.Link>
       </Nav>
     </Navbar>
   );
