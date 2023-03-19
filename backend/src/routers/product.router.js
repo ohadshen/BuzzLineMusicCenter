@@ -4,7 +4,8 @@ import { getAllProductsController,
     createProductController,
     deleteProductController,
     editProductController,
-    getProductsValueForCompaniesController } from "../controllers/product.controller.js";
+    getProductsValueForCompaniesController,
+    getNumOfProductsForCompaniesController } from "../controllers/product.controller.js";
 const router = Router();
   
 router.route("/")
@@ -18,6 +19,9 @@ router.route("/:id")
 
 router.route("/companies/value")
     .get(getProductsValueForCompaniesController)
+
+router.route("/companies/count")
+    .get(getNumOfProductsForCompaniesController)
 
 export default router;
   

@@ -25,4 +25,16 @@ const getProductsValueForCompanies = async () => {
     }));
 }
 
-export { getAllProducts, getProductById, createProduct, deleteProduct, editProduct, getProductsValueForCompanies };
+const getNumOfProductsForCompanies = async () => {
+    const numOfProductsForCompany = await Product.aggregate([
+        { $group: { _id: "$company", count: { $sum: 1 }} }
+    ]);
+
+    return await Promise.all(numOfProductsForCompany.map(async (companyCounter) => {
+        return { company: (await getCompanyById(companyCounter._id)).name,
+                 numOfProducts: companyCounter.count
+        }
+    }));
+}
+
+export { getAllProducts, getProductById, createProduct, deleteProduct, editProduct, getProductsValueForCompanies, getNumOfProductsForCompanies };

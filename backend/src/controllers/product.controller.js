@@ -3,7 +3,8 @@ import { getAllProducts,
     createProduct,
     deleteProduct,
     editProduct,
-    getProductsValueForCompanies } from "../services/product.service.js";
+    getProductsValueForCompanies,
+    getNumOfProductsForCompanies } from "../services/product.service.js";
 import { sendError } from "../shared/errorHandler.js";
 
 import {io} from "../services/socketio.service.js";
@@ -62,9 +63,18 @@ const getProductsValueForCompaniesController = async (req, res) => {
     }
 }
 
+const getNumOfProductsForCompaniesController = async (req, res) => {
+    try {
+        res.json(await getNumOfProductsForCompanies());
+    } catch(err) {
+        sendError('error get number of products for companies', err, res);
+    }
+}
+
 export { getAllProductsController,
         getProductByIdController,
         createProductController,
         deleteProductController,
         editProductController,
-        getProductsValueForCompaniesController };
+        getProductsValueForCompaniesController,
+        getNumOfProductsForCompaniesController };
